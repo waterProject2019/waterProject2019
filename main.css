@@ -27,8 +27,96 @@ html, body {
 	position: absolute;
 	top: 53%;
 	left: -10%;
-	animation-delay: 0.45s;
+	animation-delay: 1.15s;
 	animation-duration: 1s;
+}
+
+.topLeftCornerSlideIn {
+	font-size: 20px;
+	animation: slideInFromTopLeftCorner forwards;
+	position: absolute;
+	top: -10;
+	left: -10%;
+	animation-delay: 1.45s;
+	animation-duration: 1s;
+}
+
+.topRightCornerSlideIn {
+	font-size: 20px;
+	animation: slideInFromTopRightCorner forwards;
+	position: absolute;
+	top: -10;
+	right: -10%;
+	animation-delay: 0.85s;
+	animation-duration: 1s;
+}
+
+.bottomLeftCornerSlideIn {
+	font-size: 20px;
+	animation: slideInFromBottomLeftCorner forwards;
+	position: absolute;
+	bottom: -10;
+	left: -10%;
+	animation-delay: 0.55s;
+	animation-duration: 1s;
+}
+
+.bottomRightCornerSlideIn {
+	font-size: 20px;
+	animation: slideInFromBottomRightCorner forwards;
+	position: absolute;
+	bottom: -10;
+	right: -10%;
+	animation-delay: 1.15s;
+	animation-duration: 1s;
+}
+
+@keyframes slideInFromBottomRightCorner {
+	0% {
+		bottom: -10%;
+		right: -10%;
+	}
+
+	100% {
+		bottom: 30%;
+		right: 30%;
+	}
+}
+
+@keyframes slideInFromBottomLeftCorner {
+	0% {
+		bottom: -10%;
+		left: -10%;
+	}
+
+	100% {
+		bottom: 30%;
+		left: 30%;
+	}
+}
+
+@keyframes slideInFromTopRightCorner {
+	0% {
+		top: -10%;
+		right: -10%;
+	}
+
+	100% {
+		top: 30%;
+		right: 30%;
+	}
+}
+
+@keyframes slideInFromTopLeftCorner {
+	0% {
+		top: -10%;
+		left: -10%;
+	}
+
+	100% {
+		top: 30%;
+		left: 30%;
+	}
 }
 
 @keyframes slideInFromRight {
