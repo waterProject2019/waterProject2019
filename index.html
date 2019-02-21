@@ -5,6 +5,7 @@
 		<title>Water Project</title>
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<link rel="icon" type="image/png" href="faviconWaterDrop.png"/>
 	</head>
 
@@ -12,12 +13,26 @@
 		<div class="topSlideIn">Water</div>
 		<div class="bottomSlideIn">Project</div>
 		<div class="topLeftCornerSlideIn" onclick="redirectToBackground()">
-			<div class="backgroundCircle"></div>
-			<p>Background</p>
+			<div class="backgroundCircle" id="circleBackground"></div>
+			<br>
+			<p id="backgroundText">Background</p>
 		</div>
-		<div class="topRightCornerSlideIn">Data</div>
-		<div class="bottomLeftCornerSlideIn">Results</div>
-		<div class="bottomRightCornerSlideIn">About</div>
+		<div class="topRightCornerSlideIn" onclick="redirectToData()">
+			<div class="dataCircle" id="circleData"></div>
+			<br>
+			<p id="dataText">Data</p>
+		</div>
+		<div class="bottomLeftCornerSlideIn">
+			<div class="resultsCircle" id="circleResults"></div>
+			<br>
+			<p id="resultsText">Results</p>
+		</div>
+		<div class="bottomRightCornerSlideIn">
+			<div class="aboutCircle" id="aboutResults"></div>
+			<br>
+			<p id="aboutText">About</p>
+		</div>
+
 		<script src="main.js"></script>	
 	</body>
 </html>
