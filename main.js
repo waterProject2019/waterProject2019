@@ -1,10 +1,50 @@
 function redirectToBackground() {
 	//alert("will be redirecting");
+	backgroundMouseLeave();
 	window.location = "background.html";
 }
 
 function redirectToData() {
+	dataMouseLeave();
 	window.location = "data.html";
+}
+
+function redirectToResults() {
+	resultsMouseLeave();
+	window.location = "results.html";
+}
+
+function redirectToAbout() {
+	aboutMouseLeave();
+	window.location = "about.html";
+}
+
+function dataMouseLeave() {
+	setTimeout(
+    	function() {
+      		$(".dataCircle").css("backgroundColor", "rgb(240, 90, 90)");
+    }, 250);
+}
+
+function backgroundMouseLeave() {
+	setTimeout(
+    	function() {
+     		$(".backgroundCircle").css("backgroundColor", "rgb(90, 180, 240)");
+   	}, 250);
+}
+
+function resultsMouseLeave() {
+	setTimeout(
+   		function() {
+   			$(".resultsCircle").css("backgroundColor", "rgb(220, 232, 80)");
+   	}, 250);
+}
+
+function aboutMouseLeave() {
+	setTimeout(
+   		function() {
+   			$(".aboutCircle").css("backgroundColor", "rgb(110, 232, 80)");
+   	}, 250);
 }
 
 $(document).ready(function() {
@@ -13,10 +53,7 @@ $(document).ready(function() {
 	});
 
 	$(".topLeftCornerSlideIn").mouseleave(function() {
-		setTimeout(
-    		function() {
-      			$(".backgroundCircle").css("backgroundColor", "rgb(90, 180, 240)");
-    	}, 200);
+		backgroundMouseLeave();
 	});
 
 	$(".topRightCornerSlideIn").mouseenter(function() {
@@ -24,10 +61,7 @@ $(document).ready(function() {
 	});
 
 	$(".topRightCornerSlideIn").mouseleave(function() {
-		setTimeout(
-    		function() {
-      			$(".dataCircle").css("backgroundColor", "rgb(240, 90, 90)");
-    	}, 200);
+		dataMouseLeave();
 	});
 
 	$(".bottomLeftCornerSlideIn").mouseenter(function() {
@@ -35,10 +69,7 @@ $(document).ready(function() {
 	});
 
 	$(".bottomLeftCornerSlideIn").mouseleave(function() {
-		setTimeout(
-    		function() {
-      			$(".resultsCircle").css("backgroundColor", "rgb(220, 232, 80)");
-    	}, 200);
+		resultsMouseLeave();
 	});
 
 	$(".bottomRightCornerSlideIn").mouseenter(function() {
@@ -46,9 +77,6 @@ $(document).ready(function() {
 	});
 
 	$(".bottomRightCornerSlideIn").mouseleave(function() {
-		setTimeout(
-    		function() {
-      			$(".aboutCircle").css("backgroundColor", "rgb(110, 232, 80)");
-    	}, 200);
+		aboutMouseLeave();
 	});
 });
