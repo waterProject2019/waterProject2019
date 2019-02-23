@@ -56,7 +56,6 @@ html, body {
 }
 
 .backgroundCircle {
-	display: block;
 	margin: 0 auto;
 	position: relative;
 	background-color: rgb(90, 180, 240);
@@ -64,6 +63,22 @@ html, body {
 	height: 100px;
 	border-radius: 50%;
 	opacity: 1;
+	text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+span {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -30px;
 }
 
 .backgroundCircle:after {
