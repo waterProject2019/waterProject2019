@@ -6,11 +6,52 @@
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
 		<link rel="icon" type="image/png" href="faviconWaterDrop.png"/>
 	</head>
 
-	<body>
+	<body class="dataClass">
 		<h1>Data</h1>
+		<button onclick="goHome()" id="home">Home</button>
+		<canvas id="myChart" width="400px" height="400px"></canvas>
 		<script src="main.js"></script>
+		<script>
+			var ctx = document.getElementById("myChart");
+			
+			var chart = new Chart(ctx, {
+		        type: 'pie',
+		        data: {
+		            labels: ["Downstairs G", "Upstairs G", "Downstairs H", "Upstairs H","Outside Library","Inside Library", "Front K", "Back K", "Outside Gym", "Outside Gym 2", "J Hall"],
+		            
+		            datasets: [{
+		                data: [419, 245, 181, 179, 50, 201, 80, 150, 158, 70, 206],
+		                label: "Cup Usage By Cooler",
+		                backgroundColor: ['rgb(0, 0, 255)',
+		                'rgb(0, 98, 255)',
+		                'rgb(81, 190, 230)',
+		                'rgb(109, 184, 198)',
+		                'rgb(149, 205, 212)',
+		                'rgb(203, 243, 255)',
+		                'rgb(228, 243, 255)',
+		                'rgb(120, 224, 156)',
+		                'rgb(7, 203, 67)',
+		                'rgba(14, 150, 14, 1)',
+		                'rgb(108, 255, 102)',
+		                'rgb(0, 255, 1)']
+		            }]
+		        },
+		        options: {
+		            responsive: true,
+		            maintainAsectRatio: false,
+		            animation: {
+		                duration: 2000,
+		                easing: "easeOutQuad",
+		            }
+		        }
+		    });
+
+		
+		</script>
 	</body>
 </html>

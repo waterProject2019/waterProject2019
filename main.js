@@ -22,7 +22,7 @@ function redirectToAbout() {
 function dataMouseLeave() {
 	setTimeout(
     	function() {
-      		$(".dataCircle").css("backgroundColor", "rgb(240, 90, 90)");
+      		$(".dataCircle").css("backgroundColor", "rgb(240, 90, 90)");	
     }, 250);
 }
 
@@ -45,6 +45,10 @@ function aboutMouseLeave() {
    		function() {
    			$(".aboutCircle").css("backgroundColor", "rgb(110, 232, 80)");
    	}, 250);
+}
+
+function goHome() {
+	window.location = "index.html";
 }
 
 $(document).ready(function() {

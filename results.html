@@ -6,11 +6,185 @@
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<link rel="icon" type="image/png" href="faviconWaterDrop.png"/>
+		<link href="hover-min.css" rel="stylesheet">
 	</head>
 
-	<body>
-		<h1>Results</h1>
+	<body class="resultsClass">
+		<h1>Garbage Patches</h1>
+		<button onclick="goHome()" id="home">Home</button>
+		<div class="imgContainer">
+			<img src="worldmap.png" alt="worldmap" usemap="#worldmap" id="wMap"/>
+			<div class="greatPacific hvr-grow" onclick="gPacific()">
+				<i class="fas fa-map-marker-alt"></i>
+				<p>Great Pacific</p>
+			</div>
+			<div id="myModalG" class="modal">
+ 	 			<div class="modal-content">
+    				<div class="modal-header">
+      					<span class="closeG">&times;</span>
+      					<h2>Great Pacific Garbage Patch</h2>
+    				</div>
+    				<div class="modal-body">
+      					<p>Some text in the Modal Body G</p>
+      					<p>Some other text...</p>
+    				</div>
+  				</div>
+			</div>
+			<div class="southPacific hvr-grow" onclick="sPacific()">
+				<i class="fas fa-map-marker-alt"></i>
+				<p>South Pacific</p>
+			</div>
+			<div id="myModalS" class="modal">
+ 	 			<div class="modal-content">
+    				<div class="modal-header">
+      					<span class="closeS">&times;</span>
+      					<h2>South Pacific Garbage Patch</h2>
+    				</div>
+    				<div class="modal-body">
+      					<p>Some text in the Modal Body G</p>
+      					<p>Some other text...</p>
+    				</div>
+  				</div>
+			</div>
+			<div class="southAtlantic hvr-grow" onclick="sAtlantic()">
+				<i class="fas fa-map-marker-alt"></i>
+				<p>South Atlantic</p>
+			</div>
+			<div id="myModalSA" class="modal">
+ 	 			<div class="modal-content">
+    				<div class="modal-header">
+      					<span class="closeSA">&times;</span>
+      					<h2>South Atlantic Garbage Patch</h2>
+    				</div>
+    				<div class="modal-body">
+      					<p>Some text in the Modal Body G</p>
+      					<p>Some other text...</p>
+    				</div>
+  				</div>
+			</div>
+			<div class="northAtlantic hvr-grow" onclick="nAtlantic()">
+				<i class="fas fa-map-marker-alt"></i>
+				<p>North Atlantic</p>
+			</div>
+			<div id="myModalNA" class="modal">
+ 	 			<div class="modal-content">
+    				<div class="modal-header">
+      					<span class="closeNA">&times;</span>
+      					<h2>North Atlantic Garbage Patch</h2>
+    				</div>
+    				<div class="modal-body">
+      					<p>Some text in the Modal Body G</p>
+      					<p>Some other text...</p>
+    				</div>
+  				</div>
+			</div>
+			<div class="indian hvr-grow" onclick="indian()">
+				<i class="fas fa-map-marker-alt"></i>
+				<p>Indian</p>
+			</div>
+			<div id="myModalI" class="modal">
+ 	 			<div class="modal-content">
+    				<div class="modal-header">
+      					<span class="closeI">&times;</span>
+      					<h2>Indian Ocean Garbage Patch</h2>
+    				</div>
+    				<div class="modal-body">
+      					<p>Some text in the Modal Body G</p>
+      					<p>Some other text...</p>
+    				</div>
+  				</div>
+			</div>
+		</div>
+
+		<script>
+			var modalG = document.getElementById('myModalG');
+			var spanG = document.getElementsByClassName("closeG")[0];
+
+			function gPacific() {
+				modalG.style.display = "block";
+			}
+
+			spanG.onclick = function() {
+				modalG.style.display = "none";
+			}
+
+			window.onclick = function(event) {
+				if (event.target == modalG) {
+			    	modalG.style.display = "none";
+				}
+			}
+
+			var modalS = document.getElementById('myModalS');
+			var spanS = document.getElementsByClassName("closeS")[0];
+
+			function sPacific() {
+				modalS.style.display = "block";
+			}
+
+			spanS.onclick = function() {
+				modalS.style.display = "none";
+			}
+
+			window.onclick = function(event) {
+				if (event.target == modalS) {
+			    	modalS.style.display = "none";
+				}
+			}
+
+			var modalSA = document.getElementById('myModalSA');
+			var spanSA = document.getElementsByClassName("closeSA")[0];
+
+			function sAtlantic() {
+				modalSA.style.display = "block";
+			}
+
+			spanSA.onclick = function() {
+				modalSA.style.display = "none";
+			}
+
+			window.onclick = function(event) {
+				if (event.target == modalSA) {
+			    	modalSA.style.display = "none";
+				}
+			}
+
+			var modalNA = document.getElementById('myModalNA');
+			var spanNA = document.getElementsByClassName("closeNA")[0];
+
+			function nAtlantic() {
+				modalNA.style.display = "block";
+			}
+
+			spanNA.onclick = function() {
+				modalNA.style.display = "none";
+			}
+
+			window.onclick = function(event) {
+				if (event.target == modalNA) {
+			    	modalNA.style.display = "none";
+				}
+			}
+
+			var modalI = document.getElementById('myModalI');
+			var spanI = document.getElementsByClassName("closeI")[0];
+
+			function indian() {
+				modalI.style.display = "block";
+			}
+
+			spanI.onclick = function() {
+				modalI.style.display = "none";
+			}
+
+			window.onclick = function(event) {
+				if (event.target == modalI) {
+			    	modalI.style.display = "none";
+				}
+			}
+
+		</script>
 		<script src="main.js"></script>
 	</body>
 </html>

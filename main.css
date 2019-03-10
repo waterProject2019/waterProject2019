@@ -8,7 +8,29 @@ html, body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: "Garamond";
+	font-family: "Arial";
+	min-width: 500px;
+	min-height: 500px;
+}
+
+.backgroundClass {
+	/*background-color: rgb(66, 134, 234);*/
+}
+
+.dataClass {
+	/*background-color: rgb(66, 134, 234);*/
+}
+
+.resultsClass {
+	/*background-color: rgb(66, 134, 234);*/
+}
+
+.aboutClass {
+	/*background-color: rgb(66, 134, 234);*/
+}
+
+#home:hover {
+	cursor: pointer;
 }
 
 .topSlideIn {
@@ -19,6 +41,7 @@ html, body {
 	right: -10%;
 	animation-delay: 0.25s;
 	animation-duration: 1s;
+	overflow: hidden;
 }
 
 .bottomSlideIn {
@@ -29,6 +52,7 @@ html, body {
 	left: -10%;
 	animation-delay: 1.15s;
 	animation-duration: 1s;
+	overflow: hidden;
 }
 
 .topLeftCornerSlideIn {
@@ -376,6 +400,270 @@ span {
 
 .bottomRightCornerSlideIn:hover {
 	cursor: pointer;
+}
+
+#wMap {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.greatPacific {
+	position: absolute;
+	right: 4%;
+	top: 50%;
+	font-size: 50px;
+	text-align: center;
+}
+
+.greatPacific:hover {
+	color: gray;
+	cursor: pointer;
+}
+
+.greatPacific:hover > p {
+	transition: 0.75s;
+	color: black;
+	opacity: 1;
+}
+
+.greatPacific > p {
+	font-size: 15px;
+	opacity: 0;
+}
+
+.southPacific {
+	position: absolute;
+	left: 13%;
+	top: 70%;
+	font-size: 50px;
+	text-align: center;
+}
+
+.southPacific:hover {
+	color: gray;
+	cursor: pointer;
+}
+
+.southPacific:hover > p {
+	transition: 0.75s;
+	color: black;
+	opacity: 1;
+}
+
+.southPacific > p {
+	font-size: 15px;
+	opacity: 0;
+}
+
+.southAtlantic {
+	position: absolute;
+	left: 42%;
+	top: 73%;
+	font-size: 50px;
+	text-align: center;
+}
+
+.southAtlantic:hover {
+	color: gray;
+	cursor: pointer;
+}
+
+.southAtlantic:hover > p {
+	transition: 0.75s;
+	color: black;
+	opacity: 1;
+}
+
+.southAtlantic > p {
+	font-size: 15px;
+	opacity: 0;
+}
+
+.northAtlantic {
+	position: absolute;
+	left: 35%;
+	top: 40%;
+	font-size: 50px;
+	text-align: center;
+}
+
+.northAtlantic:hover {
+	color: gray;
+	cursor: pointer;
+}
+
+.northAtlantic > p {
+	font-size: 15px;
+	opacity: 0;
+}
+
+.northAtlantic:hover > p {
+	transition: 0.75s;
+	color: black;
+	opacity: 1;
+}
+
+.indian {
+	position: absolute;
+	right: 30%;
+	top: 80%;
+	font-size: 50px;
+	text-align: center;
+}
+
+.indian:hover {
+	color: gray;
+	cursor: pointer;
+}
+
+.indian:hover > p {
+	transition: 0.75s;
+	color: black;
+	opacity: 1;
+}
+
+.indian > p {
+	font-size: 15px;
+	opacity: 0;
+}
+
+.modal {
+  	display: none;
+  	position: fixed;
+  	z-index: 1;
+  	padding-top: 100px;
+  	left: 0;
+  	top: 0;
+  	width: 100%;
+  	height: 100%;
+  	overflow: auto;
+  	background-color: rgb(0,0,0);
+  	background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+	from {
+		top:-300px; 
+		opacity:0
+	} 
+
+  	to {
+  		top:0; 
+  		opacity:1
+  	}
+}
+
+@keyframes animatetop {
+	from {
+		top:-300px; 
+		opacity:0
+	}
+
+	to {
+		top:0; 
+		opacity:1
+	}
+}
+
+.closeG {
+ 	color: white;
+ 	float: right;
+  	font-size: 28px;
+	font-weight: bold;
+}
+
+.closeG:hover,
+.closeG:focus {
+  	color: #000;
+  	text-decoration: none;
+	cursor: pointer;
+}
+
+.closeS {
+ 	color: white;
+ 	float: right;
+  	font-size: 28px;
+	font-weight: bold;
+}
+
+.closeS:hover,
+.closeS:focus {
+  	color: #000;
+  	text-decoration: none;
+	cursor: pointer;
+}
+
+.closeSA {
+ 	color: white;
+ 	float: right;
+  	font-size: 28px;
+	font-weight: bold;
+}
+
+.closeSA:hover,
+.closeSA:focus {
+  	color: #000;
+  	text-decoration: none;
+	cursor: pointer;
+}
+
+.closeNA {
+ 	color: white;
+ 	float: right;
+  	font-size: 28px;
+	font-weight: bold;
+}
+
+.closeNA:hover,
+.closeNA:focus {
+  	color: #000;
+  	text-decoration: none;
+	cursor: pointer;
+}
+
+.closeI {
+ 	color: white;
+ 	float: right;
+  	font-size: 28px;
+	font-weight: bold;
+}
+
+.closeI:hover,
+.closeI:focus {
+  	color: #000;
+  	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header {
+  	padding: 2px 16px;
+  	background-color: #5cb85c;
+	color: white;
+}
+
+.modal-body {
+	padding: 2px 16px;
+}
+
+.modal-footer {
+	padding: 2px 16px;
+  	background-color: #5cb85c;
+  	color: white;
 }
 
 @keyframes expandFadeOutBorder {
