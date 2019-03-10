@@ -8,13 +8,16 @@ html, body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: "Arial";
+	font-family: "Didot", serif;
 	min-width: 500px;
 	min-height: 500px;
 }
 
-.backgroundClass {
-	/*background-color: rgb(66, 134, 234);*/
+.backgroundImg {
+	position: absolute;
+	z-index: -1;
+	text-align: center;
+	width: 100%;
 }
 
 .dataClass {
@@ -664,6 +667,22 @@ span {
 	padding: 2px 16px;
   	background-color: #5cb85c;
   	color: white;
+}
+
+.prefaceInfo {
+	margin: 15px;
+	padding: 15px;
+	text-align: left;
+	position: absolute;
+}
+
+.pHeader {
+	width: 100%;
+	text-align: center;
+}
+
+.prefaceInfo > p {
+	font-size: 25px;
 }
 
 @keyframes expandFadeOutBorder {
