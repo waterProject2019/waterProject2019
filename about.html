@@ -11,8 +11,47 @@
 	</head>
 
 	<body class="aboutClass">
-		<h1>About</h1>
-		<button onclick="goHome()" id="home">Home</button>
+		<div class="headerContainerBig">
+			<div class="header">
+				<div class="headerCircleHome" id="circleHeader" onclick="goHome()">
+					<div class="headerContainer">
+						<span><i class="fas fa-home fa-3x"></i></span>
+						<br><br>
+						<p id="backgroundText">Home</p>
+					</div>
+				</div>
+				<div class="headerCirclePreface" id="circleHeader"  onclick="redirToBackground()">
+					<div class="headerContainer">
+						<span><i class="fas fa-tint fa-3x"></i></span>
+						<br><br>
+						<p id="backgroundText">Preface</p>
+					</div>
+				</div>
+				<div class="headerCircleLocal" id="circleHeader" onclick="redirToData()">
+					<div class="headerContainer">
+						<span><i class="fas fa-school fa-3x"></i></span>
+						<br><br>
+						<p id="dataText">Local</p>
+					</div>
+				</div>
+				<div class="headerCircleGlobal" id="circleHeader" onclick="redirToResults()">
+					<div class="headerContainer">
+						<span><i class="fas fa-globe-americas fa-3x"></i></span>
+						<br><br>
+						<p id="resultsText">Global</p>
+					</div>
+				</div>
+				<div class="headerCircleAbout" id="circleHeader" onclick="redirToAbout()">
+					<div class="headerContainer">
+						<span><i class="fas fa-question fa-3x"></i></span>
+						<br><br>
+						<p id="aboutText">About</p>
+					</div>
+				</div>
+				<span class="stretch"></span>
+			</div>
+		</div>
+
 		<script src="main.js"></script>
 	</body>
 </html>

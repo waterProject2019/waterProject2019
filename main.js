@@ -51,6 +51,22 @@ function goHome() {
 	window.location = "index.html";
 }
 
+function redirToBackground() {
+	window.location = "background.html";
+}
+
+function redirToData() {
+	window.location = "data.html";
+}
+
+function redirToResults() {
+	window.location = "results.html";
+}
+
+function redirToAbout() {
+	window.location = "about.html";
+}
+
 $(document).ready(function() {
 	$(".topLeftCornerSlideIn").mouseenter(function() {
 		$(".backgroundCircle").css("backgroundColor", "white");

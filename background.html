@@ -11,8 +11,48 @@
 	</head>
 
 	<body class="backgroundClass">
-		<h1 class="pHeader">Preface</h1>
-		<button onclick="goHome()" id="home">Home</button>
+		<!--<h1 class="pHeader">Preface</h1>
+		<button onclick="goHome()" id="home">Home</button>-->
+		<div class="headerContainerBig">
+			<div class="header">
+				<div class="headerCircleHome" id="circleHeader" onclick="goHome()">
+					<div class="headerContainer">
+						<span><i class="fas fa-home fa-3x"></i></span>
+						<br><br>
+						<p id="backgroundText">Home</p>
+					</div>
+				</div>
+				<div class="headerCirclePreface" id="circleHeader"  onclick="redirToBackground()">
+					<div class="headerContainer">
+						<span><i class="fas fa-tint fa-3x"></i></span>
+						<br><br>
+						<p id="backgroundText">Preface</p>
+					</div>
+				</div>
+				<div class="headerCircleLocal" id="circleHeader" onclick="redirToData()">
+					<div class="headerContainer">
+						<span><i class="fas fa-school fa-3x"></i></span>
+						<br><br>
+						<p id="dataText">Local</p>
+					</div>
+				</div>
+				<div class="headerCircleGlobal" id="circleHeader" onclick="redirToResults()">
+					<div class="headerContainer">
+						<span><i class="fas fa-globe-americas fa-3x"></i></span>
+						<br><br>
+						<p id="resultsText">Global</p>
+					</div>
+				</div>
+				<div class="headerCircleAbout" id="circleHeader" onclick="redirToAbout()">
+					<div class="headerContainer">
+						<span><i class="fas fa-question fa-3x"></i></span>
+						<br><br>
+						<p id="aboutText">About</p>
+					</div>
+				</div>
+				<span class="stretch"></span>
+			</div>
+		</div>
 		<div class="prefaceInfo">
 			<p>Even with continuous updates to modern technology, issues such as water storage and accessibility still prevail today. The United Nation’s 6th Sustainability Goal states: “Ensure availability and sustainable management of water and sanitation for all.” With 29% of the global population lacking sanitary drinking water supplies, the UN’s hope for the accessibility to sanitary water seems to be in a future quite far away.</p>
 			<p>To be considered in conjunction with the issue of drinking water is the accompaniment of plastic. Plastic storage containers for water have become ubiquitous – it seems that whenever water is stored outside of its natural state, plastic accompanies it. At Ithaca High School, we see this accompaniment in the water coolers and cups at the school. Plastics such as these are then disposed of to the environment, where they can potentially release toxins, crowd the environment, and cause incorrect gene expression. This then begs the question of alternatives to plastics in water transportation and consumption. What other options are there?</p>

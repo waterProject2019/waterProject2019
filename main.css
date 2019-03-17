@@ -14,10 +14,125 @@ html, body {
 }
 
 .backgroundImg {
-	position: absolute;
-	z-index: -1;
 	text-align: center;
 	width: 100%;
+}
+
+.prefaceInfo {
+	margin: 15px;
+	padding: 15px;
+	text-align: left;
+}
+
+.pHeader {
+	width: 100%;
+	text-align: center;
+}
+
+.prefaceInfo > p {
+	font-size: 25px;
+}
+
+#circleHeader:hover {
+	cursor: pointer;
+}
+
+.header {
+	display: inline-block;
+	width: 95%;
+	text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+
+.headerContainerBig {
+	text-align: center;
+	padding-top: 15px;
+}
+
+.headerCircleHome {
+	margin: 0 auto;
+	position: relative;
+	background-color: rgb(255, 51, 246);
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	opacity: 1;
+	text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.headerCirclePreface {
+	margin: 0 auto;
+	position: relative;
+	background-color: rgb(90, 180, 240);
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	opacity: 1;
+	text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.headerCircleLocal {
+	margin: 0 auto;
+	position: relative;
+	background-color: rgb(240, 90, 90);
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	opacity: 1;
+	text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.headerCircleGlobal {
+	margin: 0 auto;
+	position: relative;
+	background-color: rgb(220, 232, 80);
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	opacity: 1;
+	text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.headerCircleAbout {
+	margin: 0 auto;
+	position: relative;
+	background-color: rgb(110, 232, 80);
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	opacity: 1;
+	text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+.headerContainer {
+	position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -30px;
+}
+
+.stretch {
+    width: 95%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+.backgroundClass {
+	max-width: 100%;
 }
 
 .dataClass {
@@ -405,7 +520,7 @@ span {
 	cursor: pointer;
 }
 
-#wMap {
+/* #wMap {
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -529,7 +644,7 @@ span {
 .indian > p {
 	font-size: 15px;
 	opacity: 0;
-}
+} */
 
 .modal {
   	display: none;
@@ -667,22 +782,6 @@ span {
 	padding: 2px 16px;
   	background-color: #5cb85c;
   	color: white;
-}
-
-.prefaceInfo {
-	margin: 15px;
-	padding: 15px;
-	text-align: left;
-	position: absolute;
-}
-
-.pHeader {
-	width: 100%;
-	text-align: center;
-}
-
-.prefaceInfo > p {
-	font-size: 25px;
 }
 
 @keyframes expandFadeOutBorder {
