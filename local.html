@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"> 
-		<title>Data</title>
+		<title>Local</title>
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -21,21 +21,21 @@
 						<p id="backgroundText">Home</p>
 					</div>
 				</div>
-				<div class="headerCirclePreface" id="circleHeader"  onclick="redirToBackground()">
+				<div class="headerCirclePreface" id="circleHeader"  onclick="redirToPreface()">
 					<div class="headerContainer">
 						<span><i class="fas fa-tint fa-3x"></i></span>
 						<br><br>
 						<p id="backgroundText">Preface</p>
 					</div>
 				</div>
-				<div class="headerCircleLocal" id="circleHeader" onclick="redirToData()">
+				<div class="headerCircleLocal current" id="circleHeader" onclick="redirToLocal()">
 					<div class="headerContainer">
 						<span><i class="fas fa-school fa-3x"></i></span>
 						<br><br>
 						<p id="dataText">Local</p>
 					</div>
 				</div>
-				<div class="headerCircleGlobal" id="circleHeader" onclick="redirToResults()">
+				<div class="headerCircleGlobal" id="circleHeader" onclick="redirToGlobal()">
 					<div class="headerContainer">
 						<span><i class="fas fa-globe-americas fa-3x"></i></span>
 						<br><br>
@@ -52,6 +52,8 @@
 				<span class="stretch"></span>
 			</div>
 		</div>
+
+		<h1>Local</h1>
 
 		<canvas id="myChart" width="400px" height="400px"></canvas>
 		<script src="main.js"></script>

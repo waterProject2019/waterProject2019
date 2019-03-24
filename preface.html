@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"> 
-		<title>Background</title>
+		<title>Preface</title>
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">  
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -22,21 +22,21 @@
 						<p id="backgroundText">Home</p>
 					</div>
 				</div>
-				<div class="headerCirclePreface" id="circleHeader"  onclick="redirToBackground()">
+				<div class="headerCirclePreface current" id="circleHeader"  onclick="redirToPreface()">
 					<div class="headerContainer">
 						<span><i class="fas fa-tint fa-3x"></i></span>
 						<br><br>
 						<p id="backgroundText">Preface</p>
 					</div>
 				</div>
-				<div class="headerCircleLocal" id="circleHeader" onclick="redirToData()">
+				<div class="headerCircleLocal" id="circleHeader" onclick="redirToLocal()">
 					<div class="headerContainer">
 						<span><i class="fas fa-school fa-3x"></i></span>
 						<br><br>
 						<p id="dataText">Local</p>
 					</div>
 				</div>
-				<div class="headerCircleGlobal" id="circleHeader" onclick="redirToResults()">
+				<div class="headerCircleGlobal" id="circleHeader" onclick="redirToGlobal()">
 					<div class="headerContainer">
 						<span><i class="fas fa-globe-americas fa-3x"></i></span>
 						<br><br>
@@ -60,6 +60,82 @@
 		<div class="backgroundImg">
 			<img src="backgroundPreface3.jpg">
 		</div>
+		<div class="alternativeContainer">
+			<h1>Alternatives</h1>
+			<p>Click on each image to learn more!</p>
+		</div>
+		<div class="alternatives">
+			<div class="ooho" onclick="modalOpenOoho()">
+				<div class="oohoContainer">
+					<h1>Ooho</h1>
+				</div>
+				<img id="oohoImg" src="ooho.jpg"/>
+			</div>
+			<div class="pg" onclick="modalOpenPG()">
+				<div class="pgContainer">
+					<h1>P&G Packet</h1>
+				</div>
+				<img id="pgImg" src="pg.jpg"/>
+			</div>
+		</div>
+		<div id="myModalOoho" class="modal">
+	 	 	<div class="modal-content">
+	    		<div class="modal-header">
+	      			<span class="closeOoho">&times;</span>
+	      			<h2>Ooho</h2>
+	    		</div>
+		    	<div class="modal-body">
+		      		<p>Some text</p>
+		      		<p>Some other text...</p>
+		    	</div>
+	  		</div>
+		</div>
+		<div id="myModalPg" class="modal">
+	 	 	<div class="modal-content">
+	    		<div class="modal-header">
+	      			<span class="closePG">&times;</span>
+	      			<h2>PG</h2>
+	    		</div>
+		    	<div class="modal-body">
+		      		<p>Some text</p>
+		      		<p>Some other text...</p>
+		    	</div>
+	  		</div>
+		</div>
 		<script src="main.js"></script>
+		<script>
+			var modalOoho = document.getElementById('myModalOoho');
+			var closeBtnOoho = document.querySelector(".closeOoho");
+
+			function modalOpenOoho() {
+				modalOoho.style.display = "block";
+			}
+
+			closeBtnOoho.onclick = function() {
+				//alert("should close");
+				modalOoho.style.display = "";
+			}
+
+			var modalPg = document.getElementById('myModalPg');
+			var closeBtnPg = document.querySelector(".closePG");
+
+			function modalOpenPG() {
+				modalPg.style.display = "block";
+			}
+
+			closeBtnPg.onclick = function() {
+				//alert("should close");
+				modalPg.style.display = "";
+			}
+
+			window.onclick = function(event) {
+				if (event.target == modalOoho) {
+			    	modalOoho.style.display = "";
+				}
+				if (event.target == modalPg) {
+			    	modalPg.style.display = "";
+				}
+			}
+		</script>
 	</body>
 </html>

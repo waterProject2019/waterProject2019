@@ -1,17 +1,17 @@
-function redirectToBackground() {
+function redirectToPreface() {
 	//alert("will be redirecting");
 	backgroundMouseLeave();
-	window.location = "background.html";
+	window.location = "preface.html";
 }
 
-function redirectToData() {
+function redirectToLocal() {
 	dataMouseLeave();
-	window.location = "data.html";
+	window.location = "local.html";
 }
 
-function redirectToResults() {
+function redirectToGlobal() {
 	resultsMouseLeave();
-	window.location = "results.html";
+	window.location = "global.html";
 }
 
 function redirectToAbout() {
@@ -51,16 +51,16 @@ function goHome() {
 	window.location = "index.html";
 }
 
-function redirToBackground() {
-	window.location = "background.html";
+function redirToPreface() {
+	window.location = "preface.html";
 }
 
-function redirToData() {
-	window.location = "data.html";
+function redirToLocal() {
+	window.location = "local.html";
 }
 
-function redirToResults() {
-	window.location = "results.html";
+function redirToGlobal() {
+	window.location = "global.html";
 }
 
 function redirToAbout() {
