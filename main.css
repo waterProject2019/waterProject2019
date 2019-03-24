@@ -898,6 +898,10 @@ span {
 	cursor: pointer;
 } */
 
+.bottomSpace {
+	height: 50px;
+}
+
 @keyframes expandFadeOutBorder {
 	0% {
 		opacity: 0.5;
