@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 		<link rel="icon" type="image/png" href="faviconWaterDrop.png"/>
 	</head>
 
@@ -52,13 +53,24 @@
 				<span class="stretch"></span>
 			</div>
 		</div>
+		<div class="localInfo">
+			<p>Our school uses a lot of cups, plastic cups, so students can get access to water. But these cups generate lots of trash, as we don't recycle the cups, but rather throw them in the trash.</p>
+		</div>
+		<div class="equations">
+			<p>To find out how many cups our school uses on average per day, we can run a T-test.</p>
+			<br>
+			Testing: $$x + y = z$$
+		</div>
+		<div class="localInfo">
+			<br>	
+			<p>Plastic in trash has many effects. [list effects and impacts here]. So what can our school do to store water in an environment-friendly way?</p>
+			<p>Some alternatives may include, fixing the water fountains, providing paper, or recycling the cups.</p>
+		</div>
 
-		<h1>Local</h1>
-
-		<canvas id="myChart" width="400px" height="400px"></canvas>
+		<!--<canvas id="myChart" width="400px" height="400px"></canvas>-->
 		<script src="main.js"></script>
 		<script>
-			var ctx = document.getElementById("myChart");
+			/*var ctx = document.getElementById("myChart");
 			
 			var chart = new Chart(ctx, {
 		        type: 'pie',
@@ -90,9 +102,8 @@
 		                easing: "easeOutQuad",
 		            }
 		        }
-		    });
-
-		
+		    });*/
+  			MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 		</script>
 	</body>
 </html>

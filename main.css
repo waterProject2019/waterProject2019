@@ -13,10 +13,23 @@ html, body {
 	min-height: 500px;
 }
 
+.localInfo {
+	padding-right: 5%;
+	padding-left: 5%;
+	font-size: 25px;
+}
+
+.equations {
+	padding-right: 5%;
+	padding-left: 5%;
+	font-size: 25px;
+}
+
 .alternatives {
 	/*background-color: red;*/
 	height: 45%;
 	padding: 3px;
+	margin-bottom: 25px;
 }
 
 .ooho {
@@ -722,6 +735,7 @@ span {
   	background-color: white;
   	border-bottom-style: solid;
   	color: black;
+  	text-align: center;
 } 
 
 .modal-body {
