@@ -13,6 +13,47 @@ html, body {
 	min-height: 500px;
 }
 
+.waterFountain {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.fountainWrapper {
+	overflow: hidden;
+}
+
+.learnMore {
+	font-size: 30px;
+}
+
+.learnMore:hover {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+
+.showTest {
+	background-color: red;
+	width: 100%;
+	height: 50%;
+	display: none;	
+}
+
+
+
+
+.first {
+	float: left;
+}
+
+.second {
+	overflow: hidden;
+}
+
+#waterFountainHeadingText {
+	font-size: 20px;
+}
+
 .localInfo {
 	padding-right: 5%;
 	padding-left: 5%;
