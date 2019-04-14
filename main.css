@@ -13,6 +13,13 @@ html, body {
 	min-height: 500px;
 }
 
+.imgWrapperLocal {
+	height: 150px;
+	width: 150px;
+	overflow: hidden;	
+	margin-right: 15px;
+}
+
 .waterFountain {
 	padding-left: 5%;
 	padding-right: 5%;
@@ -22,24 +29,21 @@ html, body {
 	overflow: hidden;
 }
 
-.learnMore {
+.learnMoreWaterFountain {
 	font-size: 30px;
 }
 
-.learnMore:hover {
+.learnMoreWaterFountain:hover {
 	cursor: pointer;
 	font-weight: bold;
 }
 
-
-.showTest {
+.showTestWaterFountain {
 	background-color: red;
 	width: 100%;
 	height: 50%;
 	display: none;	
 }
-
-
 
 
 .first {
@@ -51,7 +55,123 @@ html, body {
 }
 
 #waterFountainHeadingText {
-	font-size: 20px;
+	font-size: 30px;
+}
+
+.paperCups {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.cupWrapper {
+	overflow: hidden;
+}
+
+.learnMorePaperCups {
+	font-size: 30px;
+}
+
+.learnMorePaperCups:hover {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.showTestPaperCups {
+	background-color: purple;
+	width: 100%;
+	height: 50%;
+	display: none;	
+}
+
+#paperCupsHeadingText {
+	font-size: 30px;
+}
+
+.recycling {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.recyclingWrapper {
+	overflow: hidden;
+}
+
+.learnMoreRecycle {
+	font-size: 30px;
+}
+
+.learnMoreRecycle:hover {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.showTestRecycle {
+	background-color: pink;
+	width: 100%;
+	height: 50%;
+	display: none;	
+}
+
+#recyclingHeadingText {
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+.tableContainer {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	table-layout: fixed;
+}
+
+th {
+	border-bottom: 2px solid black;
+	text-align: left;
+	padding: 8px;
+}
+
+td {
+	text-align: left;
+	padding: 8px;
+	/*
+	display: list-item;         
+	list-style-type: disc;
+	list-style-position: inside;*/
+}
+
+#left {
+	border-left: 2px solid black;
+}
+
+td:nth-child(even) {
+	background-color: #dddddd;
+}
+
+#cons {
+	background-color: #dddddd;
+    border-left: 2px solid black;
+}
+
+
+
+
+
+
+
+
+#conditionCheck {
+	padding-left: 5em;
+	/*padding-top: 0px; */
 }
 
 .localInfo {
