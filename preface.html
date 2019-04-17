@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">  
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="icon" type="image/png" href="faviconWaterDrop.png"/>
 	</head>
 
@@ -60,6 +60,22 @@
 		<div class="backgroundImg">
 			<img src="backgroundPreface3.jpg">
 		</div>
+		<a href = "#" class = "scrollToTop"><i class = "fa fa-arrow-up"></i></a>
+		<script>
+		    $(document).ready(function() {
+				$(window).scroll(function() {
+					if($(this).scrollTop() > 200) {
+						$('.scrollToTop').fadeIn();
+					} else {
+						$('.scrollToTop').fadeOut();
+					}
+				});
+
+				$('.scrollToTop').click(function() {
+					$('html, body').animate({scrollTop: 0})
+				})
+			});
+		</script>
 		<script src="main.js"></script>
 	</body>
 </html>

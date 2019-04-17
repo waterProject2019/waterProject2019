@@ -98,31 +98,23 @@
 				<table>
 					<tr>
 					    <th>Pros</th>
-					    <th id="contact">Cons</th>
+					    <th id="cons">Cons</th>
 					</tr>
 					<tr>
-					    <td>Alfreds</td>
-					    <td id="left">Can be expensive</td>
+					    <td>Can minimize use of plastic, if not completely remove all plastic use!</td>
+					    <td id="left">Can be expensive.</td>
 					</tr>
 					<tr>
-					    <td>Centro</td>
-					    <td id="left">Francisco</td>
+					    <td>Much more convenient than filling a plastic cup every time to drink.</td>
+					    <td id="left">If the water is lead-infused, then people would be exposed to lead water.</td>
 					</tr>
 					<tr>
-					    <td>Ernst</td>
-					    <td id="left">Roland</td>
+					    <td>Can have water bottle fill stations</td>
+					    <td id="left">Prone to breaking.</td>
 					</tr>
 					<tr>
-					    <td>Island</td>
-					    <td id="left">Helen</td>
-					</tr>
-					<tr>
-					    <td>Laughing</td>
-					    <td id="left">Yoshi</td>
-					</tr>
-					<tr>
-					    <td>Magazzini</td>
-					    <td id="left">Giovanni</td>
+					    <td>Able to dispense chilled water.</td>
+					    <td id="left">If people put thier mouth on the head, bacteria can spread.</td>
 					</tr>
 				</table>
 			</div>
@@ -146,7 +138,7 @@
 				<table>
 					<tr>
 					    <th>Pros</th>
-					    <th id="contact">Cons</th>
+					    <th id="cons">Cons</th>
 					</tr>
 					<tr>
 					    <td>Alfreds</td>
@@ -193,7 +185,7 @@
 				<table>
 					<tr>
 					    <th>Pros</th>
-					    <th id="contact">Cons</th>
+					    <th id="cons">Cons</th>
 					</tr>
 					<tr>
 					    <td>Alfreds</td>
@@ -224,8 +216,17 @@
 		</div>
 
 		<!--<canvas id="myChart" width="400px" height="400px"></canvas>-->
-		<h1>Edit below still!</h1>
-		<p>Plastic in trash has many effects. [list effects and impacts here].</p>
+		<div class="whyRecycle">
+			<p>But why do we need to consider alternatives to plastic storage?</p>
+			<p>This is because plastic has many harmful effects on the environment and animals. These can include: </p>
+			<ul>
+				<li>Toxin release</li>
+				<li>Crowding</li>
+				<li>Incorrect gene expression</li>
+			</ul>
+		</div>
+		<a href = "#" class = "scrollToTop"><i class = "fa fa-arrow-up"></i></a>
+		<div class="bottomSpace"></div>
 		<script src="main.js"></script>
 		<script>
 			/*var ctx = document.getElementById("myChart");
@@ -261,6 +262,19 @@
 		            }
 		        }
 		    });*/
+		    $(document).ready(function() {
+				$(window).scroll(function() {
+					if($(this).scrollTop() > 200) {
+						$('.scrollToTop').fadeIn();
+					} else {
+						$('.scrollToTop').fadeOut();
+					}
+				});
+
+				$('.scrollToTop').click(function() {
+					$('html, body').animate({scrollTop: 0})
+				})
+			});
 		</script>
 		<script>
 			$(document).ready(function(){
