@@ -40,10 +40,9 @@ html, body {
 
 .showTestWaterFountain {
 	width: 100%;
-	height: 50%;
 	display: none;	
+	padding-bottom: 25px;
 }
-
 
 .first {
 	float: left;
@@ -77,8 +76,8 @@ html, body {
 
 .showTestPaperCups {
 	width: 100%;
-	height: 50%;
-	display: none;	
+	display: none;
+	padding-bottom: 25px;	
 }
 
 #paperCupsHeadingText {
@@ -105,8 +104,8 @@ html, body {
 
 .showTestRecycle {
 	width: 100%;
-	height: 50%;
 	display: none;	
+	padding-bottom: 25px;
 }
 
 #recyclingHeadingText {
@@ -152,8 +151,6 @@ html, body {
 
 
 
-
-
 .whyRecycle {
 	padding-right: 5%;
 	padding-left: 5%;
@@ -167,6 +164,62 @@ html, body {
 
 
 
+
+
+#glassContainer {
+	background: rgba( 0, 0, 0, 0.10);
+	margin-left:auto;
+	margin-right:auto;
+	width: 300px;
+	border-left: 1px solid #bbb;
+	border-right: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	border-top: 1px solid #ccc;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 30px;
+	padding-top: 5px;
+}
+
+#glass {
+	background: rgba( 255, 255, 255, 0.50);
+	border: 1px solid #bbb;
+	border-top: 1px solid #eee;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width: 300px;
+	height: 400px;
+	position: relative;
+}
+
+#waterInGlass {
+	background-image: url("waves.png");
+	background-position: top right;
+	position: absolute;
+	bottom: 0px;
+	width: 300px;
+	height: 100px;
+	-webkit-transition: all 3s ease-out;
+	-moz-transition: all 3s ease-out;
+	-o-transition: all 3s ease-out;
+	transition: all 3s ease-out;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#glass:hover #waterInGlass {
+	height: 350px;
+	background-position: top left;
+	-webkit-transition: all 3s ease-out;
+	-moz-transition: all 3s ease-out;
+	-o-transition: all 3s ease-out;
+	transition: all 3s ease-out;
+}
 
 
 
