@@ -13,6 +13,34 @@ html, body {
 	min-height: 500px;
 }
 
+
+
+#sourceHeader {
+	font-size: 35px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.sourceList {
+	padding-right: 5%;
+	padding-left: 5%;
+	font-size: 20px;
+}
+
+.whyWebsite {
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+.whyWebsite > p {
+	font-size: 25px;
+}
+
+
+
+
+
+
 .imgWrapperLocal {
 	height: 150px;
 	width: 150px;
@@ -35,7 +63,7 @@ html, body {
 
 .learnMoreWaterFountain:hover {
 	cursor: pointer;
-	font-weight: bold;
+	color: darkgray;
 }
 
 .showTestWaterFountain {
@@ -71,7 +99,7 @@ html, body {
 
 .learnMorePaperCups:hover {
 	cursor: pointer;
-	font-weight: bold;
+	color: darkgray;
 }
 
 .showTestPaperCups {
@@ -99,7 +127,7 @@ html, body {
 
 .learnMoreRecycle:hover {
 	cursor: pointer;
-	font-weight: bold;
+	color: darkgray;
 }
 
 .showTestRecycle {
@@ -111,16 +139,6 @@ html, body {
 #recyclingHeadingText {
 	font-size: 30px;
 }
-
-
-
-
-
-
-
-
-
-
 
 .scrollToTop {
    position: fixed;
@@ -143,28 +161,11 @@ html, body {
    color: black;
 }
 
-
-
-
-
-
-
-
-
 .whyRecycle {
 	padding-right: 5%;
 	padding-left: 5%;
 	font-size: 25px;
 }
-
-
-
-
-
-
-
-
-
 
 #glassContainer {
 	background: rgba( 0, 0, 0, 0.10);
@@ -221,21 +222,22 @@ html, body {
 	transition: all 3s ease-out;
 }
 
+#toxinRelease {
+	border-right: 2px solid black;
+}
 
+#geneExpression {
+	background-color: #dddddd;
+}
 
-
-
-
-
-
-
-
-
-
+#rightWhy {
+	border-left: 2px solid black;
+}
 
 .tableContainer {
 	padding-left: 5%;
 	padding-right: 5%;
+	font-size: 20px;
 }
 
 table {
