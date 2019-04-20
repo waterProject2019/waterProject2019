@@ -26,7 +26,7 @@
 					<div class="headerContainer">
 						<span><i class="fas fa-tint fa-3x"></i></span>
 						<br><br>
-						<p id="backgroundText">Preface</p>
+						<p id="backgroundText">Narrative</p>
 					</div>
 				</div>
 				<div class="headerCircleLocal current" id="circleHeader" onclick="redirToLocal()">
@@ -69,12 +69,16 @@
 			<p id="conditionCheck">Large enough sample? No. But the population of jugs is most likely normal.</p>
 			<p id="conditionCheck">Okay to run a 1 sample T-interval, with \(df=19\) and a confidence level of \(95\%\)</p>
 			<br>
+			<p id="conditionCheck">Without checking conditions, the result may not be useful, which is why conditions should always be checked before doing any statistical analysis</p>
+			<br>
 			<p>Now that our conditions are checked, we can do the mechanics</p>
 			<script type="math/tex; mode=display" id="MathJax-Element-1">\mu_{\bar{x}} = 3 * 1892.71 = 5678.13</script>
+			<p>Where \(\mu_{\bar{x}}\) represents the sample mean number of cups</p>
 			<p>We don't know the sample or population standard deviation, so we can estimate.</p>
-			<p>It is reasonable to assume that around half the students at IHS actually use cups, so \(\sigma = 800\)</p>
-			<script type="math/tex; mode=display" id="MathJax-Element-1">\sigma_{\bar{x}} = \frac{800}{\sqrt{3}} = 461.88</script>
+			<p>It is reasonable to assume that around half the students at IHS actually use cups, so \(s = 800\) where \(s\) represents the sample standard deviation.</p>
+			<script type="math/tex; mode=display" id="MathJax-Element-1">SE(\bar{x}) = \frac{800}{\sqrt{3}} = 461.88</script>
 			<script type="math/tex; mode=display" id="MathJax-Element-1">t^{*}_{df=2}=4.303</script>
+			<p>\(t^{*} \) represents the critical value corresponding to a different confidence level.</p>
 			<script type="math/tex; mode=display" id="MathJax-Element-1">CI=\bar{x} \pm t^{*}SE(\bar{x}) \Rightarrow 5678.13 \pm 4.303 * (461.88) = (3690.82, 7665.44)</script>
 			<br>
 			<p>We are \(95\% \) confident that the true proportion of cups used everyday at IHS is between 3690 and 7665 cups. That is quite a big range, but it makes sense in context because some people may forgot their water bottle one day, one day may be extremely hot. Regardless, even if our school used just under 3500 cups per day, that is a lot! </p>
@@ -89,7 +93,7 @@
 			</div>
 		</div>
 		<div class="localInfo">
-			<p>Some alternatives may include, fixing the water fountains, providing paper cups, or recycling the cups.</p>
+			<p>Some alternatives may include, allowing water fountains to be used, providing paper cups, or recycling the cups.</p>
 		</div>
 		<div class="waterFountain">
 			<div class="fountainWrapper">
@@ -99,7 +103,7 @@
 					</div>
 				</div>
 				<div class="second">
-					<p id="waterFountainHeadingText">Fixing the water fountains would be an amazing alternative!</p>
+					<p id="waterFountainHeadingText">Opening the water fountains would be amazing!</p>
 					<p class="learnMoreWaterFountain">Learn more! <i class="fas fa-arrow-right"></i></p>
 				</div>
 			</div>
@@ -113,7 +117,7 @@
 					</tr>
 					<tr>
 					    <td>Can minimize use of plastic, if not completely remove all plastic use!</td>
-					    <td id="left">Can be expensive.</td>
+					    <td id="left">Can be a hassle to re-open all the fountains.</td>
 					</tr>
 					<tr>
 					    <td>Much more convenient than filling a plastic cup every time to drink.</td>
@@ -225,6 +229,19 @@
 				    <td id="rightWhy">Plastic has been seen to drive animals away from the best adaptation. Relating to toxins, the toxins can be consumed by organisms (BPA is water soluble, and can leach into food and drink). This causes a disruption in the genes which can stay to the fourth generation, or even further! But how do the toxins affect the genes? This is still being discovered, but what is important is that plastic dissolving does affect gene expression.</td>
 				</tr>
 			</table>
+		</div>
+		<br>
+		<div class="globalNarrative">
+			<p id="globalNarrativeQuestion">Q: How much plastic did our school use, what are the effects, and what can we do to minimize use?</p>
+			<br>
+			<p id="globalNarrativeContent">Based off of calculations and rough estimates, our school (being conservative) used to use about 3700 cups a day. This calculation was made using a a t-interval and estimating that around 3 jugs are used per day. But why does using this many plastic cups matter? Aren’t they recyclable?</p>
+			<p id="globalNarrativeContent">Plastic has a profound effect on the environment; these can include, and definitely are not limited to, polluting areas, and releasing toxins that eventually lead to gene expression changes in organisms that come in contact with the toxins. Our school contributes to this by simply not properly disposing of plastic cups. The “recycling” bins that are seen outside the water jugs are in reality trash bins; whatever goes in makes its way to the trash can. Now imagine 3700 cups going into the trash every day!</p>
+			<p id="globalNarrativeContent">To expand upon effects of plastic, one major consequence is the formation of an ocean of plastic. In the oceans right now, there are millions of tons of plastic alone. This ruins the habitats for marine life, and lots of this plastic gets washed up on shore onto beaches and other coastline attractions.</p>
+			<p id="globalNarrativeContent">Plastic also releases toxins as it decomposes. But the scale of toxins released is tremendous! Plastic takes hundreds, or even thousands, of years to decompose, and toxins are constantly leaking out. These toxins find themselves in food and water of many organisms (including humans). This leads to damaging of vital body systems, and different gene expressions, that goes in the opposite way of evolution. But many generations after yours, the effects will still be present.</p>
+			<p id="globalNarrativeContent">One alternative that our school can do to lower plastic use is to open the water fountains. This could eliminate the usage of all cups! The only downside is that opening all the fountains will be a hassle, and if the water is lead poisoned, then lead-water would be circulating throughout.</p>
+			<p id="globalNarrativeContent">Another alternative could be use paper cups! Most paper cups are biodegradable, environmentally friendly, and are relatively cheap. One issue with using paper cups is that some types of paper cups come with a plastic lining on the inside of the cup, which complicates recycling them.</p>
+			<p id="globalNarrativeContent">One simple (but not so simple) solution could be to recycle the cups rather than throw them in the trash. This would ensure no plastic waste, as all the plastic would be recycled. We are lucky in Tompkins County to have a recycling center. Some less fortunate places would have trouble recycling, as recycling facilities are needed and are expensive to maintain.</p>
+			<p id="globalNarrativeContent">Any one of these alternatives would lead to a more environmentally friendly school system, and minimize plastic waste. Minimizing plastic waste would lead to a healthier ecosystem and a cleaner world. These small steps toward a cleaner future can be a model for others to contribute to the well-being of our world.</p>
 		</div>
 		<div class="toxinExpansion"></div>
 		<a href = "#" class = "scrollToTop"><i class = "fa fa-arrow-up"></i></a>
