@@ -13,7 +13,26 @@ html, body {
 	min-height: 500px;
 }
 
+.globalNarrative {
+	padding-left: 5%;
+	padding-right: 5%;
+}
 
+#globalNarrativeQuestion {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#globalNarrativeContent {
+	font-size: 20px;
+}
+
+#globalNarrativeContentBreak {
+	width: 90%;
+	padding-right: 5%;
+	padding-left: 5%;
+	border-bottom: 1px solid black;
+}
 
 #sourceHeader {
 	font-size: 35px;
@@ -37,9 +56,11 @@ html, body {
 }
 
 
-
-
-
+.alternativeIntro {
+	padding-right: 5%;
+	padding-left: 5%;
+	font-size: 25px;
+}
 
 .imgWrapperLocal {
 	height: 150px;
@@ -1007,6 +1028,7 @@ span {
 
 .modal-body {
 	padding: 2px 16px;
+	font-size: 20px;
 }
 
 .modal-footer {
