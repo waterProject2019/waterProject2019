@@ -18,6 +18,11 @@ html, body {
 	padding-right: 5%;
 }
 
+.imageContainer {
+	width: 100%;
+	text-align: center;
+}
+
 #globalNarrativeQuestion {
 	font-weight: bold;
 	font-size: 35px;
