@@ -57,16 +57,16 @@
 		<div class="imageContainer">
 			<img src="graphicWebsite.png"/>
 		</div>
-		<p id="globalNarrativeContentBreak"></p>
+		<div class="equations">
+			<p id="globalNarrativeContentBreak"></p>
+		</div>
 		<div class="localInfo">
 			<p>Above is a graphic that shows some statistics of our current world. Calculations are below for how some of the statistics were gotten.</p>
-			<br>
 			<p>Our school uses a lot of cups, plastic cups, so students can get access to water. But these cups generate lots of trash, as we don't recycle the cups, but rather throw them in the trash.</p>
 		</div>
 		<br>
-		<br>
 		<div class="equations">
-			<p>3700 cups: </p>
+			<p id="wantToBeBold">3700 cups: </p>
 			<p>On average, our school uses about 3 jugs per day. To get a more precise estimate, we can convert the amount of jugs into cups and use a T-confidence-interval.The reason why we are using T-interval is because we are looking at the MEAN number of cups used per day. What a T-interval is a range of values for which the actual mean number of something can lie.</p>
 			<p>To make a confidence interval, we need to first check conditions:</p>
 			<p id="conditionCheck">Our sample is a representative sample becase the amount of jugs used is collective, and each cup is the same.</p>
@@ -92,14 +92,10 @@
 			<script type="math/tex; mode=display" id="MathJax-Element-1">CI=\bar{x} \pm t^{*}SE(\bar{x}) \Rightarrow 5678.13 \pm 4.303 * (461.88) = (3690.82, 7665.44)</script>
 			<br>
 			<p>We are \(95\% \) confident that the true proportion of cups used everyday at IHS is between 3690 and 7665 cups. That is quite a big range, but it makes sense in context because some people may forgot their water bottle one day, one day may be extremely hot. Regardless, even if our school used just under 3500 cups per day, that is a lot! </p>
-			<br>
-			<br>
-			<br>
 			<p id="globalNarrativeContentBreak"></p>
-			<p>8500 pounds:</p>
+			<p id="wantToBeBold">8500 pounds:</p>
 			<p>5 grams / 453.592 pound \(\cdot\) 3700 cups \(\cdot\) 200 days per year.</p>
 		</div>
-		<div class="toxinExpansion"></div>
 		<a href = "#" class = "scrollToTop"><i class = "fa fa-arrow-up"></i></a>
 		<div class="bottomSpace"></div>
 		<script src="main.js"></script>
@@ -150,21 +146,6 @@
 				$('.scrollToTop').click(function() {
 					$('html, body').animate({scrollTop: 0})
 				})
-			});
-		</script>
-		<script>
-			$(document).ready(function(){
-  				$(".learnMoreWaterFountain").click(function(){
-    				$(".showTestWaterFountain").slideToggle();
-  				});
-
-  				$(".learnMorePaperCups").click(function() {
-  					$(".showTestPaperCups").slideToggle();
-  				});
-
-  				$(".learnMoreRecycle").click(function() {
-  					$(".showTestRecycle").slideToggle();
-  				});
 			});
 		</script>
 	</body>

@@ -66,7 +66,9 @@
 			<p id="globalNarrativeContent">A simple solution could be to recycle the cups rather than throw them in the trash. We are lucky in Tompkins County to have a recycling center, and the fact that IHS does not recycle is a shame, and an example of improper utilization of nearby resources. Those without recycling facilities near them would not be able to implement such an alternative, but it is a solution that our student body should push for. </p>
 			<p id="globalNarrativeContent">When considering environmental issues, the overwhelming number of problems can seem insurmountable. Instead of focusing on an apocalyptic future, it is crucial to focus on smaller actions that we can take as individuals — any lasting change will be not the product of one large project, but dozens of smaller ones such as the recycling of plastic cups, cumulatively being the change for a better future.</p>
 		</div>	
-		<p id="globalNarrativeContentBreak"></p>
+		<div class="equations">
+			<p id="globalNarrativeContentBreak"></p>
+		</div>
 		<div class="equations">
 			<p>When Green Team removed plastic cups, many people were angered, but the benefit to environment is undeniable. But there are other alternatives that our school can do to still provide water storage devices to everyone.</p>
 		</div>
@@ -315,6 +317,21 @@
 			    	modalPg.style.display = "";
 				}
 			}*/
+		</script>
+		<script>
+			$(document).ready(function(){
+  				$(".learnMoreWaterFountain").click(function(){
+    				$(".showTestWaterFountain").slideToggle();
+  				});
+
+  				$(".learnMorePaperCups").click(function() {
+  					$(".showTestPaperCups").slideToggle();
+  				});
+
+  				$(".learnMoreRecycle").click(function() {
+  					$(".showTestRecycle").slideToggle();
+  				});
+			});
 		</script>
 	</body>
 </html>

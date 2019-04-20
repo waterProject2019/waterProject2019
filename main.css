@@ -32,6 +32,10 @@ html, body {
 	font-size: 25px;
 }
 
+#wantToBeBold {
+	font-weight: bold;
+}
+
 #globalNarrativeContentBreak {
 	width: 90%;
 	padding-right: 5%;
