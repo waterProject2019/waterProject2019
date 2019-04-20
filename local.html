@@ -22,18 +22,18 @@
 						<p id="backgroundText">Home</p>
 					</div>
 				</div>
-				<div class="headerCirclePreface current" id="circleHeader"  onclick="redirToPreface()">
+				<div class="headerCirclePreface" id="circleHeader"  onclick="redirToPreface()">
 					<div class="headerContainer">
 						<span><i class="fas fa-tint fa-3x"></i></span>
 						<br><br>
 						<p id="backgroundText">Narrative 1</p>
 					</div>
 				</div>
-				<div class="headerCircleLocal" id="circleHeader" onclick="redirToLocal()">
+				<div class="headerCircleLocal current" id="circleHeader" onclick="redirToLocal()">
 					<div class="headerContainer">
 						<span><i class="fas fa-school fa-3x"></i></span>
 						<br><br>
-						<p id="dataText">Local</p>
+						<p id="dataText">Graphic</p>
 					</div>
 				</div>
 				<div class="headerCircleGlobal" id="circleHeader" onclick="redirToGlobal()">
@@ -57,6 +57,7 @@
 		<div class="imageContainer">
 			<img src="graphicWebsite.png"/>
 		</div>
+		<p id="globalNarrativeContentBreak"></p>
 		<div class="localInfo">
 			<p>Above is a graphic that shows some statistics of our current world. Calculations are below for how some of the statistics were gotten.</p>
 			<br>
@@ -65,12 +66,9 @@
 		<br>
 		<br>
 		<div class="equations">
-			<p>To get 8500 pounds, we computed: 5 grams / 453.592 pound \(\cdot\) 3700 cups \(\cdot\) 200 days per year.</p>
-			<br>
-			<p>On average, our school uses about 3 jugs per day. To get a more precise estimate, we can convert the amount of jugs into cups and use a T-confidence-interval</p>
-			<p>The reason why we are using T-interval is because we are looking at the MEAN number of cups used per day.</p>
+			<p>3700 cups: </p>
+			<p>On average, our school uses about 3 jugs per day. To get a more precise estimate, we can convert the amount of jugs into cups and use a T-confidence-interval.The reason why we are using T-interval is because we are looking at the MEAN number of cups used per day. What a T-interval is a range of values for which the actual mean number of something can lie.</p>
 			<p>To make a confidence interval, we need to first check conditions:</p>
-			<p>What a T-interval is a range of values for which the actual mean number of something can lie.</p>
 			<p id="conditionCheck">Our sample is a representative sample becase the amount of jugs used is collective, and each cup is the same.</p>
 			<p id="conditionCheck">Our sample is not large enough, but the population of jugs is most likely normal.</p>
 			<p id="conditionCheck">Okay to run a 1 sample T-interval, with \(df=19\) and a confidence level of \(95\%\)</p>
@@ -96,153 +94,11 @@
 			<p>We are \(95\% \) confident that the true proportion of cups used everyday at IHS is between 3690 and 7665 cups. That is quite a big range, but it makes sense in context because some people may forgot their water bottle one day, one day may be extremely hot. Regardless, even if our school used just under 3500 cups per day, that is a lot! </p>
 			<br>
 			<br>
-			<p>When Green Team removed plastic cups, many people were angered, but the benefit to environment is undeniable. But there are other alternatives that our school can do to still provide water storage devices to everyone.</p>
+			<br>
+			<p id="globalNarrativeContentBreak"></p>
+			<p>8500 pounds:</p>
+			<p>5 grams / 453.592 pound \(\cdot\) 3700 cups \(\cdot\) 200 days per year.</p>
 		</div>
-		<div id="glassContainer">
-			<div id="glass">
-				<div id="waterInGlass">
-				</div>
-			</div>
-		</div>
-		<div class="localInfo">
-			<p>Some alternatives may include, allowing water fountains to be used, providing paper cups, or recycling the cups.</p>
-		</div>
-		<div class="waterFountain">
-			<div class="fountainWrapper">
-				<div class="first">
-					<div class="imgWrapperLocal">
-						<img style='height: 100%; width: 100%; object-fit: contain' src="waterFountain.png">
-					</div>
-				</div>
-				<div class="second">
-					<p id="waterFountainHeadingText">Opening the water fountains would be amazing!</p>
-					<p class="learnMoreWaterFountain">Learn more! <i class="fas fa-arrow-right"></i></p>
-				</div>
-			</div>
-		</div>
-		<div class="showTestWaterFountain">
-			<div class="tableContainer">
-				<table>
-					<tr>
-					    <th>Pros</th>
-					    <th id="cons">Cons</th>
-					</tr>
-					<tr>
-					    <td>Can minimize use of plastic, if not completely remove all plastic use!</td>
-					    <td id="left">Can be a hassle to re-open all the fountains.</td>
-					</tr>
-					<tr>
-					    <td>Much more convenient than filling a plastic cup every time to drink.</td>
-					    <td id="left">If the water is lead-infused, then people would be exposed to lead water.</td>
-					</tr>
-					<tr>
-					    <td>Can have water bottle fill stations</td>
-					    <td id="left">Prone to breaking.</td>
-					</tr>
-					<tr>
-					    <td>Able to dispense chilled water.</td>
-					    <td id="left">If people put thier mouth on the head, bacteria can spread.</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-		<div class="paperCups">
-			<div class="cupWrapper">
-				<div class="first">
-					<div class="imgWrapperLocal">
-						<img style='height: 100%; width: 100%; object-fit: contain' src="paperCup.jpg">
-					</div>
-				</div>
-				<div class="second">
-					<p id="paperCupsHeadingText">Paper cups could also be used instead of plastic!</p>
-					<p class="learnMorePaperCups">Learn more! <i class="fas fa-arrow-right"></i></p>
-				</div>
-			</div>
-		</div>
-		<div class="showTestPaperCups">
-			<div class="tableContainer">
-				<table>
-					<tr>
-					    <th>Pros</th>
-					    <th id="cons">Cons</th>
-					</tr>
-					<tr>
-					    <td>Paper cups can be made with recycled materials.</td>
-					    <td id="left">Even though they are made with recycled materials, some types of paper cups may be hard to recycle.</td>
-					</tr>
-					<tr>
-					    <td>Environmentally friendly.</td>
-					    <td id="left">Many paper cups are plastic lines (so the paper doesn't become water sodden).</td>
-					</tr>
-					<tr>
-					    <td>Relatively cheap.</td>
-					    <td id="left"></td>
-					</tr>
-					<tr>
-					    <td>Decomposes fast.</td>
-					    <td id="left"></td>
-					</tr>
-				</table>
-			</div>
-		</div>
-		<div class="recycling">
-			<div class="recyclingWrapper">
-				<div class="first">
-					<div class="imgWrapperLocal">
-						<img style='height: 100%; width: 100%; object-fit: contain' src="recycle.jpg">
-					</div>
-				</div>
-				<div class="second">
-					<p id="recyclingHeadingText">Recycling plastic cups can lead to reusing of the plastic!</p>
-					<p class="learnMoreRecycle">Learn more! <i class="fas fa-arrow-right"></i></p>
-				</div>
-			</div>
-		</div>
-		<div class="showTestRecycle">
-			<div class="tableContainer">
-				<table>
-					<tr>
-					    <th>Pros</th>
-					    <th id="cons">Cons</th>
-					</tr>
-					<tr>
-					    <td>Environmental benefit.</td>
-					    <td id="left">Takes energy to recycle.</td>
-					</tr>
-					<tr>
-					    <td>Reduces energy used to manufacture goods.</td>
-					    <td id="left">Recycling is quite costly (facilities are expensive to maintain).</td>
-					</tr>
-					<tr>
-					    <td>Reduces raw material consumption.</td>
-					    <td id="left">Not everything is recyclable.</td>
-					</tr>
-					<tr>
-					    <td>New job opportunities can be created.</td>
-					    <td id="left">Recycling workers face toxin exposure.</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-
-		<!--<canvas id="myChart" width="400px" height="400px"></canvas>-->
-		<div class="whyRecycle">
-			<p>But why do we need to consider alternatives to plastic storage?</p>
-			<p>This is because plastic has many harmful effects on the environment and animals. These can include: </p>
-		</div>
-		<div class="tableContainer">
-			<table>
-				<tr>
-				    <th id="toxinRelease">Toxin Release</th>
-				    <th id="geneExpression">Gene expression</th>
-				</tr>
-				<tr>
-				    <td id="leftWhy">Bisphenol A (BPA) and PS oligomer are both released as plastic decomposes. BPA and PS oligomer causes additional pollution; in addition, they can disrupt hormone function and can affect the reproductive system. These toxins can also disrupt the endocrine system.</td>
-				    <td id="rightWhy">Plastic has been seen to drive animals away from the best adaptation. Relating to toxins, the toxins can be consumed by organisms (BPA is water soluble, and can leach into food and drink). This causes a disruption in the genes which can stay to the fourth generation, or even further! But how do the toxins affect the genes? This is still being discovered, but what is important is that plastic dissolving does affect gene expression.</td>
-				</tr>
-			</table>
-		</div>
-		<br>
 		<div class="toxinExpansion"></div>
 		<a href = "#" class = "scrollToTop"><i class = "fa fa-arrow-up"></i></a>
 		<div class="bottomSpace"></div>
